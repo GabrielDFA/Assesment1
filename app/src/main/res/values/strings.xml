@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Assesment1</string>
+    <string name="app_name">Assessment</string>
+    <string name="kaloriText">""</string>
+    <string name="pesan_invalid">Kolom tidak boleh kosong.</string>
 </resources>
