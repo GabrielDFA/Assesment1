@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">Assessment</string>
+    <string name="app_name">Assessment 2</string>
     <string name="kaloriText">""</string>
     <string name="pesan_invalid">Kolom tidak boleh kosong.</string>
+    <string name="copyright"> Aplikasi ini digunakan untuk menghitung kalori yang dibutuhkan perharinya.
+        \n\nAplikasi ini dibuat untuk Assessment 2 Mobile Programming.
+        Temukan Kodenya di https://github.com/GabrielDFA/Assesment1.git Copyright © 2023 Gabriel David Florens Ayal.\nAll rights reserved.</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="share">Share</string>
+    <string name="template_share"> Kalori Harian \nBerat: %1$s kg\nTinggi: %2$s cm\nUsia: %3$s\n %4$s</string>
 </resources>
