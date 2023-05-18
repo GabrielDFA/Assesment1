@@ -3,7 +3,6 @@ package org.d3if3027.assesment1.ui.hitung
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -80,32 +79,32 @@ class HitungFragment : Fragment() {
 
      fun kaloriHarian() {
         val berat = binding.beratBadanInp.text.toString()
-        val beratFloat = berat.toFloat()
         if(TextUtils.isEmpty(berat)){
             Toast.makeText(context, R.string.pesan_invalid, Toast.LENGTH_LONG).show()
             return
         }
+         val beratFloat = berat.toFloat()
 
         val tinggi = binding.tinggiBadanInp.text.toString()
-        val tinggiFloat = tinggi.toFloat()
         if(TextUtils.isEmpty(tinggi)){
             Toast.makeText(context, R.string.pesan_invalid, Toast.LENGTH_LONG).show()
             return
         }
+         val tinggiFloat = tinggi.toFloat()
 
         val selectedID = binding.radioGroup.checkedRadioButtonId
         if(selectedID == -1){
             Toast.makeText(context, R.string.pesan_invalid, Toast.LENGTH_LONG).show()
             return
         }
-
-
         val usia = binding.usiaInp.text.toString()
-        val usiaInt = usia.toInt()
+
         if(TextUtils.isEmpty(usia)){
             Toast.makeText(context, R.string.pesan_invalid, Toast.LENGTH_LONG).show()
             return
         }
+         val usiaInt = usia.toInt()
+
         val isMale = selectedID == R.id.buttonPria
 
         viewModel.calculateBMR(beratFloat,tinggiFloat,usiaInt, isMale)

@@ -18,19 +18,17 @@
 
     <TextView
         android:id="@+id/urutan"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/circle_background"
-        android:gravity="center"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="I"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/bmrText"

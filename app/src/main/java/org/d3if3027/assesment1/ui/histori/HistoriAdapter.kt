@@ -64,8 +64,6 @@ class HistoriAdapter :
             if (item.isMale) R.string.pria else R.string.wanita)
 
             dataText.text= "Berat: ${item.berat}, Tinggi: ${item.tinggi}, Usia: ${item.usia}, $gender"
-
-
         }
     }
 
