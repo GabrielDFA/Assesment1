@@ -8,4 +8,14 @@
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
     <string name="share">Share</string>
     <string name="template_share"> Kalori Harian \nBerat: %1$s kg\nTinggi: %2$s cm\nUsia: %3$s\n %4$s</string>
+    <string name="no_data">Belum ada data</string>
+    <string name="histori">Histori</string>
+    <string name="hasil_out">BMR: %1$.2f </string>
+    <string name="data_out">Berat: %1$.1f - Tinggi: %2$/.1f - %3$s</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="hapus_histori">Hapus Histori Hasil</string>
+    <string name="konfirm_hapus">Hapus Semua Histori?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
 </resources>

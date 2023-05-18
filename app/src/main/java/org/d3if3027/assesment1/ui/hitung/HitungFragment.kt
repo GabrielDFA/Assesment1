@@ -1,8 +1,9 @@
-package org.d3if3027.assesment1.ui
+package org.d3if3027.assesment1.ui.hitung
 
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.*
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -10,13 +11,17 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import org.d3if3027.assesment1.R
 import org.d3if3027.assesment1.databinding.FragmentHitungBinding
+import org.d3if3027.assesment1.db.DbBmr
 import org.d3if3027.assesment1.model.HasilBMR
+import org.d3if3027.assesment1.ui.HitungViewModel
 
 class HitungFragment : Fragment() {
     private lateinit var binding: FragmentHitungBinding
 
-    private val viewModel: MainViewModel by lazy {
-        ViewModelProvider(requireActivity())[MainViewModel::class.java]
+    private val viewModel: HitungViewModel by lazy {
+        val db = DbBmr.getInstance(requireContext())
+        val factory = HitungViewModelFactory(db.dao)
+        ViewModelProvider(this, factory)[HitungViewModel::class.java]
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -25,11 +30,17 @@ class HitungFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.menu_about){
+        when(item.itemId){
+            R.id.histori_menu ->{
+                findNavController().navigate(R.id.action_hitungFragment_to_historiFragment)
+                return true
+            }
+            R.id.menu_about -> {
             findNavController().navigate(
                 R.id.action_hitungFragment_to_aboutFragment
             )
             return true
+            }
         }
         return super.onOptionsItemSelected(item)
     }

@@ -8,4 +8,10 @@
         app:showAsAction="never"
         />
 
+    <item
+        android:id="@+id/histori_menu"
+        android:icon="@drawable/baseline_history_24"
+        android:title="@string/histori"
+        app:showAsAction="ifRoom"/>
+
 </menu>

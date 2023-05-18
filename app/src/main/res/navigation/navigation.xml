@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/hitungFragment"
-        android:name="org.d3if3027.assesment1.ui.HitungFragment"
+        android:name="org.d3if3027.assesment1.ui.hitung.HitungFragment"
         android:label="fragment_hitung"
         tools:layout="@layout/fragment_hitung" >
         <action
@@ -17,9 +17,17 @@
             android:id="@+id/action_aboutFragment_to_hitungFragment"
             app:destination="@id/hitungFragment"
             />
+        <action
+            android:id="@+id/action_hitungFragment_to_historiFragment"
+            app:destination="@id/historiFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="org.d3if3027.assesment1.ui.AboutFragment"
         android:label="AboutFragment"/>
+    <fragment
+        android:id="@+id/historiFragment"
+        android:name="org.d3if3027.assesment1.ui.histori.HistoriFragment"
+        android:label="@string/histori"
+        tools:layout="@layout/layout_histori"/>
 </navigation>
