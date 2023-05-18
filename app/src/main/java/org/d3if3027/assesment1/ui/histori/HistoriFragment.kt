@@ -1,7 +1,6 @@
 package org.d3if3027.assesment1.ui.histori
 
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider

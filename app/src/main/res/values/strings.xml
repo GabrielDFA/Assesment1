@@ -18,4 +18,6 @@
     <string name="konfirm_hapus">Hapus Semua Histori?</string>
     <string name="hapus">Hapus</string>
     <string name="batal">Batal</string>
+    <string name="loading">Cal Count</string>
+    <string name="masuk_main">Mulai Hitung</string>
 </resources>
