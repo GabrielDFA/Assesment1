@@ -1,7 +1,7 @@
 [
-{"nama_makanan" : "Lemak Sapi", "kalori": "902 kalori / 100g", "image_id" : "lemak" }
-{"nama_makanan" : "Kacang Macadamia", "kalori": "718 kalori / 100g", "image_id" : "kacang"}
-{"nama_makanan" : "Coklat", "kalori": "598 kalori / 100g", "image_id" : "cklat" }
-{"nama_makanan" : "Selai Kacang", "kalori": "590 kalori / 100g", "image_id" : "selai" }
+{"nama_makanan" : "Lemak Sapi", "kalori": "902 kalori / 100g", "image_id" : "lemak" },
+{"nama_makanan" : "Kacang Macadamia", "kalori": "718 kalori / 100g", "image_id" : "kacang"},
+{"nama_makanan" : "Coklat", "kalori": "598 kalori / 100g", "image_id" : "cklat" },
+{"nama_makanan" : "Selai Kacang", "kalori": "590 kalori / 100g", "image_id" : "selai" },
 {"nama_makanan" : "Daging Sapi", "kalori": "358 kalori / 100g", "image_id" : "daging" }
 ]
