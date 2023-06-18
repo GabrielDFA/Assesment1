@@ -33,6 +33,7 @@ class UpdateWorker(
         ) {
             Log.e("Worker", "Tidak diberikan izin notifikasi")
             return Result.failure()
+        }
 
             val builder = NotificationCompat.Builder(applicationContext,
                 MainActivity.CHANNEL_ID)
@@ -46,7 +47,7 @@ class UpdateWorker(
                 .setAutoCancel(true)
             val manager = NotificationManagerCompat.from(applicationContext)
             manager.notify(NOTIFICATION_ID, builder.build())
-        }
+
         Log.d("Worker", "Menjalankan proses background..")
         return Result.success()
     }
