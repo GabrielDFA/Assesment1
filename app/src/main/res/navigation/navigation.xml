@@ -20,6 +20,9 @@
         <action
             android:id="@+id/action_hitungFragment_to_historiFragment"
             app:destination="@id/historiFragment" />
+        <action
+            android:id="@+id/action_hitungFragment_to_makananFragment"
+            app:destination="@id/makananFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -38,4 +41,8 @@
             android:id="@+id/action_loadingFragment_to_hitungFragment"
             app:destination="@id/hitungFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/makananFragment"
+        android:name="MakananFragment"
+        android:label="MakananFragment" />
 </navigation>

@@ -1,13 +1,21 @@
 package org.d3if3027.assesment1.ui.hitung
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.*
+import android.widget.ProgressBar
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContentProviderCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import org.d3if3027.assesment1.MainActivity
 import org.d3if3027.assesment1.R
 import org.d3if3027.assesment1.databinding.FragmentHitungBinding
 import org.d3if3027.assesment1.db.DbBmr
@@ -16,6 +24,9 @@ import org.d3if3027.assesment1.ui.HitungViewModel
 
 class HitungFragment : Fragment() {
     private lateinit var binding: FragmentHitungBinding
+    private lateinit var loadingIndicator: ProgressBar
+
+
 
     private val viewModel: HitungViewModel by lazy {
         val db = DbBmr.getInstance(requireContext())
@@ -40,6 +51,13 @@ class HitungFragment : Fragment() {
             )
             return true
             }
+            R.id.info_kalori -> {
+                findNavController().navigate(
+                    R.id.action_hitungFragment_to_makananFragment
+                )
+                return true
+            }
+
         }
         return super.onOptionsItemSelected(item)
     }

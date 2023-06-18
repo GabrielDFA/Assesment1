@@ -27,4 +27,11 @@ object MakananApi{
     val service: MakananService by lazy {
         retrofit.create(MakananService ::class.java)
     }
+
+    fun getMakananUrl(image_id: String): String {
+        return "$BASE_URL$image_id.jpeg"
+    }
+
 }
+enum class ApiStatus { LOADING, SUCCESS, FAILED }
+

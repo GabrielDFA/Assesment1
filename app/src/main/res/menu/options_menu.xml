@@ -14,4 +14,10 @@
         android:title="@string/histori"
         app:showAsAction="ifRoom"/>
 
+    <item
+        android:id="@+id/info_kalori"
+        android:icon="@drawable/baseline_food_bank_24"
+        android:title="@string/infoKalori"
+        app:showAsAction="ifRoom"/>
+
 </menu>

@@ -20,4 +20,10 @@
     <string name="batal">Batal</string>
     <string name="loading">Cal Count</string>
     <string name="masuk_main">Mulai Hitung</string>
+    <string name="infoKalori">Info Kalori</string>
+    <string name="koneksi_error">Koneksi error</string>
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update data makanan</string>
+    <string name="notif_title">Ada Makanan baru!</string>
+    <string name="notif_text">Cek Makanan biar tau kebutuhan kalorimu..</string>
 </resources>
